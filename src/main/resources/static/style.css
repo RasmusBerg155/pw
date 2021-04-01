@@ -14,7 +14,8 @@
 .navbar{
     position: fixed;
     width: 100%;
-    background: indianred;
+    padding: 15px 0;
+    background: crimson;
     font-family: 'Ubuntu', sans-serif;
 }
 .navbar .max-width{
@@ -36,4 +37,11 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+}
+
+/* home section styling */
+.home{
+    display: flex;
+    background: url("images/1129115.jpg") no-repeat center;
+    height: 100vh;
 }
