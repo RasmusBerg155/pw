@@ -110,16 +110,8 @@
     color: #fff;
     background: none;
 }
-
-
-/* *** about section styling *** */
-section{
-    padding: 100px 0;
-}
-.about{
-    font-family: 'Poppins', sans-serif;
-}
-.about .title{
+/* *** all similar content styling code *** */
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -128,7 +120,7 @@ section{
     padding-bottom: 20px;
     font-family: Ubuntu, sans-serif;
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -138,8 +130,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Who I am";
+section .title::after{
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -148,6 +139,17 @@ section{
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
+}
+
+/* *** about section styling *** */
+section{
+    padding: 100px 0;
+}
+.about, .services{
+    font-family: 'Poppins', sans-serif;
+}
+.about .title::after{
+    content: "who I am";
 }
 .about .about-content{
     display: flex;
@@ -159,8 +161,8 @@ section{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 575px;
-    width: 400px;
+    height: 525px;
+    width: 350px;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -196,6 +198,17 @@ section{
     background: none;
 }
 
+/* *** services section styling *** */
+.services{
+
+}
+
+
+
+
+
+
+
 /* *** responsive media query start *** */
 @media(max-width: 1300px){
     .home .max-width{
@@ -204,8 +217,8 @@ section{
 }
 @media(max-width: 1104px){
     .about .about-content .left img{
-        height: 525px;
-        width: 350px;
+        height: 450px;
+        width: 300px;
     }
 }
 @media(max-width: 991px) {
