@@ -110,7 +110,11 @@
     color: #fff;
     background: none;
 }
-/* *** all similar content styling code *** */
+
+/* all similar content styling code */
+section{
+    padding: 100px 0;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -142,16 +146,14 @@ section .title::after{
 }
 
 /* *** about section styling *** */
-section{
-    padding: 100px 0;
-}
 .about, .services{
     font-family: 'Poppins', sans-serif;
 }
 .about .title::after{
     content: "who I am";
 }
-.about .about-content{
+.about .about-content,
+.services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -200,15 +202,47 @@ section{
 
 /* *** services section styling *** */
 .services{
-
+    color: #fff;
+    background: #111;
 }
-
-
-
-
-
-
-
+.services .title:before{
+    background: #fff;
+}
+services .title:after{
+    background: #111;
+    content: "What I provide";
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: crimson;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
 /* *** responsive media query start *** */
 @media(max-width: 1300px){
     .home .max-width{
@@ -279,22 +313,33 @@ section{
     .about .about-content .right{
         flex: 100%;
     }
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media(max-width: 690px) {
     .max-width {
         padding: 0 23px;
     }
-    .home .home-content .text-2{
+
+    .home .home-content .text-2 {
         font-size: 60px;
     }
+
     .home .home-content .text-3 {
         font-size: 32px;
     }
-    .home .home-content a{
+
+    .home .home-content a {
         font-size: 20px;
     }
 
+    .services .serv-content .card {
+        width: 100%;
+    }
+}
 @media(max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -302,5 +347,4 @@ section{
     .home .home-content .text-3 {
         font-size: 27px;
     }
-}
 }
