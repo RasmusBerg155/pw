@@ -115,6 +115,17 @@
 section{
     padding: 100px 0;
 }
+.about, .services, .skills{
+    font-family: 'Poppins', sans-serif;
+}
+.about .about-content,
+.services .serv-content
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 section .title{
     position: relative;
     text-align: center;
@@ -146,18 +157,8 @@ section .title::after{
 }
 
 /* *** about section styling *** */
-.about, .services{
-    font-family: 'Poppins', sans-serif;
-}
 .about .title::after{
     content: "who I am";
-}
-.about .about-content,
-.services .serv-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
 }
 .about .about-content .left{
     width: 45%;
@@ -243,6 +244,18 @@ services .title:after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/* *** skills section styling *** */
+.skills .title::after{
+    content: "What I know";
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+
+
+
 /* *** responsive media query start *** */
 @media(max-width: 1300px){
     .home .max-width{
