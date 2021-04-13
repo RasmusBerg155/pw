@@ -119,7 +119,7 @@ section{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.services .serv-content
+.services .serv-content,
 .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
@@ -252,7 +252,11 @@ services .title:after{
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }
-
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
 
 
 
