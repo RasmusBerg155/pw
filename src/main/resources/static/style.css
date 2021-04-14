@@ -193,7 +193,7 @@ section .title::after{
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 4px solid crimson;
+    border: 2px solid crimson;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
@@ -253,13 +253,72 @@ services .title:after{
     width: calc(50% - 30px);
 }
 .skills .skills-content .left .text{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
 }
-
-
-
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .right .html::before{
+    width: 50%;
+}
+.skills .skills-content .right .css::before{
+    width: 40%;
+}
+.skills .skills-content .right .js::before{
+    width: 20%;
+}
+.skills .skills-content .right .java::before{
+    width: 75%;
+}
+.skills .skills-content .right .mysql::before{
+    width: 75%;
+}
 /* *** responsive media query start *** */
 @media(max-width: 1300px){
     .home .max-width{
@@ -334,6 +393,10 @@ services .title:after{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+    .skills .skills-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
 
 @media(max-width: 690px) {
@@ -353,7 +416,7 @@ services .title:after{
         font-size: 20px;
     }
 
-    .services .serv-content .card {
+    .services .serv-content .card{
         width: 100%;
     }
 }
