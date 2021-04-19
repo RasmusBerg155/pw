@@ -12,5 +12,8 @@ $(document).ready(function(){
       $('.navbar i').toggleClass("active");
     })
 
-
+    // owl carousel script
+    $('.carousel').owlCarousel({
+        
+    });
 });
