@@ -324,14 +324,14 @@ section .title::after{
 
 /* *** teams section styling *** */
 .teams .title::after{
-    content: "Who is with me";
+    content: "Who with me";
 }
 .teams .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
 }
-.teams .carousel .card .img{
+.teams .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
