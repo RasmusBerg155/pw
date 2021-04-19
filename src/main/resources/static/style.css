@@ -115,7 +115,7 @@
 section{
     padding: 100px 0;
 }
-.about, .services, .skills{
+.about, .services, .skills, .teams{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
@@ -202,14 +202,16 @@ section .title::after{
 }
 
 /* *** services section styling *** */
-.services{
+.services, .teams{
     color: #fff;
     background: #111;
 }
-.services .title:before{
+.services .title:before,
+.teams .title:before{
     background: #fff;
 }
-services .title:after{
+.services .title:after,
+.teams .title:after{
     background: #111;
     content: "What I provide";
 }
@@ -319,6 +321,28 @@ services .title:after{
 .skills .skills-content .right .mysql::before{
     width: 75%;
 }
+
+/* *** teams section styling *** */
+.teams .title::after{
+    content: "Who is with me";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.teams .carousel .card .img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+}
+
+
+
+
+
 /* *** responsive media query start *** */
 @media(max-width: 1300px){
     .home .max-width{
