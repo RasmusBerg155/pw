@@ -10,4 +10,9 @@ public class HomeController {
     public String returnIndex(){
         return "index";
     }
+
+    @GetMapping("/portfolio")
+    public String returnPortfolio() {return "portfolio";}
+
+
 }

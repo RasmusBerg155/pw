@@ -5,12 +5,34 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+html{
+    scroll-behavior: smooth;
+}
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
-
+/* *** index styling *** */
+.front{
+    display: flex;
+    background: url("images/frontpage.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.front .front-menu li{
+    list-style: none;
+    display: inline-block;
+}
+.front .front-menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+}
+/* *** portfolio styling *** */
 /* *** navbar styling *** */
 .navbar{
     position: fixed;
@@ -28,6 +50,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.navbar .menu-back a{
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: 500;
 }
 .navbar .logo a{
     color: #fff;
@@ -214,7 +241,7 @@ section .title::after{
 .services .title::after,
 .teams .title::after{
     background: #111;
-    content: "What I provide";
+    content: "what I provide";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -250,7 +277,7 @@ section .title::after{
 
 /* *** skills section styling *** */
 .skills .title::after{
-    content: "What I know";
+    content: "what I know";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -325,7 +352,7 @@ section .title::after{
 
 /* *** teams section styling *** */
 .teams .title::after{
-    content: "Who with me";
+    content: "who worked with me";
 }
 .teams .carousel .card{
     background: #222;
@@ -387,7 +414,7 @@ section .title::after{
 
 /* *** contact section styling *** */
 .contact .title::after{
-    content: "Get in touch";
+    content: "get in touch";
 }
 .contact .contact-content .column{
     width: calc(50% - 30px);

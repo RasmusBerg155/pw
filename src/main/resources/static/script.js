@@ -12,6 +12,13 @@ $(document).ready(function(){
       $('.navbar i').toggleClass("active");
     });
 
+    // Work in progress counter, missing dependencies
+   /* $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    }); */
+
+
     // owl carousel script
    $('.carousel').owlCarousel({
        margin: 20,
